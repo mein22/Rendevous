@@ -1,0 +1,9 @@
+
+      :root { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial; }
+      /* small utility to darken and blur hero image for the white text to pop */
+      .background-bg {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    

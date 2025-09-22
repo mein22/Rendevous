@@ -1,0 +1,269 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rendezvous</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="antialiased bg-gray-900 text-white">
+  <!-- Theatre Section -->
+  <section class="relative min-h-screen hero-bg" style="background-image: url('images/backgrd.png');">
+
+    <!-- global subtle overlay and blur -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+    <!-- Top navigation (glass) -->
+    <header class="absolute left-0 right-0 top-6 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3 rounded-full bg-white/70 backdrop-blur-sm">
+
+    <!-- Brand (left) -->
+    <div class="flex items-center gap-3">
+      <div class="hidden sm:block text-purple-900 font-bold text-lg">rendezvous</div>
+    </div>
+
+    <!-- center nav (hidden on small screens) -->
+    <nav class="hidden lg:flex gap-8 items-center text-sm text-white/90">
+      <a href="#" class="text-[#432361] font-bold">About us</a>
+      <a href="#" class="text-[#432361] font-bold">FAQs</a>
+      <a href="#" class="text-[#432361] font-bold">Contact us</a>
+      <a href="#" class="text-[#432361] font-bold">Discover</a>
+    </nav>
+
+    <!-- right actions -->
+    <div class="flex items-center gap-3">
+      <a href="#" class="text-sm text-[#432361] font-bold  hidden md:inline">Log in</a>
+      <a href="#" class="inline-flex items-center px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium">Sign up</a>
+    </div>
+
+  </div>
+</header>
+
+    <!-- Theatre content container -->
+    <div
+      class="relative z-10 max-w-6xl mx-auto px-6 md:px-12 pt-80 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+      <!-- left: headline -->
+      <div class="lg:col-span-6 pt-6">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight drop-shadow-md">
+          Ready to Rock? Discover the
+          <span class="block">Hottest Events Here — Your</span>
+          <span class="block">Calendar's New Best Friend!</span>
+        </h1>
+      </div>
+
+
+      <!-- right: search card -->
+      <div class="lg:col-span-6 flex justify-end">
+        <div class="w-full max-w-2xl bg-white rounded-2xl p-4 md:p-6 shadow-2xl transform translate-y-6">
+
+          <form class="flex gap-4 items-center">
+
+            <!-- search input -->
+            <label class="flex-1 flex items-center gap-3 bg-white/90 rounded-xl px-4 py-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103.5 3.5a7.5 7.5 0 0013.15 13.15z" />
+              </svg>
+              <input type="search" placeholder="Search for an event"
+                class="w-full bg-transparent placeholder-gray-500 outline-none text-gray-800 font-medium" />
+            </label>
+
+            <!-- categories select -->
+            <div class="hidden md:block border-l pl-4">
+              <select class="px-4 py-3 rounded-xl bg-transparent text-gray-700 outline-none">
+                <option>Categories</option>
+                <option>Concerts</option>
+                <option>Conferences</option>
+              </select>
+            </div>
+
+            <!-- search button -->
+            <button type="submit"
+              class="ml-2 px-6 py-3 rounded-xl bg-gradient-to-br from-purple-600 to-purple-500 text-white font-semibold shadow">Search</button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- subtle bottom fade to darker page content -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+  </section>
+
+  <!-- Trending Section -->
+  <section id="trending">
+    <div class="flex justify-center items-center min-h-screen bg-gray-50">
+      <div class="max-w-6xl w-full px-4">
+        <!-- Section Title -->
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-[#000000]">Trending events</h2>
+          <a href="#" class="text-purple-600 hover:underline text-sm font-medium">
+            View all trending events →
+          </a>
+        </div>
+
+        <!-- 3 Cards Grid -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+            <img src="images/Trending1.png" alt="Trending 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">ISWIS Live show</h3>
+              <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <a href="./read.html" class="mt-3 inline-block text-purple-600 hover:underline text-sm font-medium">
+                View details →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+            <img src="images/Trending1.png" alt="Trending 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">NATIV5 Festival</h3>
+              <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <a href="./read.html" class="mt-3 inline-block text-purple-600 hover:underline text-sm font-medium">
+                View details →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+            <img src="images/Trending3.png" alt="Trending 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Basketmouth Tour</h3>
+              <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <a href="./read.html" class="mt-3 inline-block text-purple-600 hover:underline text-sm font-medium">
+                View details →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Section -->
+  <section>
+    <div class="flex justify-center items-center min-h-screen bg-white">
+      <div class="max-w-6xl w-full px-6 grid md:grid-cols-2 gap-8 items-center">
+
+        <!-- Left side: Text and Button -->
+        <div>
+          <h2 class="text-3xl font-bold leading-snug mb-4 text-[#000000]">
+            Discover a World of Events <br /> Tailored Just for You.
+          </h2>
+          <button class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg shadow">
+            <a href="#trending">
+             View all events
+            </a> 
+          </button>
+        </div>
+
+        <!-- Right side: Images -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Online Events -->
+          <div class="relative col-span-1 overflow-hidden rounded-lg">
+            <img src="images/online.png" alt="Online Events" class="w-full h-40 md:h-48 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <span class="text-white font-semibold text-lg">Online Events</span>
+            </div>
+          </div>
+
+          <!-- Physical Events -->
+          <div class="relative col-span-1 overflow-hidden rounded-lg">
+            <img src="images/physical.png" alt="Physical Events" class="w-full h-40 md:h-48 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <span class="text-white font-semibold text-lg">Physical Events</span>
+            </div>
+          </div>
+
+          <!-- Hybrid Events -->
+          <div class="relative grid-cols-1 md:grid-cols-2 overflow-hidden rounded-lg">
+            <img src="images/hybrid.png" alt="Hybrid Events" class="w-full h-40 md:h-56 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <span class="text-white font-semibold text-lg">Hybrid Events</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+     
+     <!-- Footer --> 
+  <footer class="bg-purple-800 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Brand name -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">rendezvous</h2>
+        <p class="text-sm text-gray-200 leading-relaxed">
+          Your Personal Event Sherpa: Curating <br>
+          Awesome, One Click at a Time.
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Feature</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Events discovery</a></li>
+          <li><a href="#" class="hover:underline">Ticketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Company</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">About us</a></li>
+          <li><a href="#" class="hover:underline">FAQs</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact us -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Contact us</h3>
+        <ul class="space-y-2 text-sm">
+          <li>info@events.com</li>
+          <li>+234 701 345 6789</li>
+          <li>
+            Race Course, 8/9 Marina, Onikan, Lagos, <br>
+            4aa Force Rd, Lagos Island 102273, Lagos
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
