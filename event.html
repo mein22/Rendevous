@@ -25,79 +25,27 @@
     </div>
   </header>
 
-  <!-- Persons Image -->
+  <!-- Product Image -->
   <section class="max-w-6xl mx-auto px-6 mt-6">
-    <img src="images/twopersons.png" alt="Hero" class="w-full rounded-lg object-cover">
+    <div class="bg-[#C97A63] min-h-screen rounded-lg flex items-center justify-center p-6">
+    <div id="product-container" class="bg-white rounded-lg shadow-lg p-6 max-w-lg w-full text-center">
+      <p class="text-gray-500">Loading product...</p>
+    </div>
+  </div>
   </section>
 
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
 
     <!-- Left Column: Event Info -->
-    <div class="md:col-span-2 space-y-6">
-      <h2 class="text-2xl font-bold">I said what I said Live Show</h2>
-
-      <!-- Event Meta -->
-      <div class="space-y-2 text-gray-600">
-        <p class="flex items-center gap-2">
-          <span><img src="images/Calendar.svg" alt="Calendar"></span> Sunday, October 3rd, 2023 - 6PM
-        </p>
-        <p class="flex items-center gap-2">
-          <span><img src="images/Location.svg" alt="Location"></span> Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island 102273, Lagos
-        </p>
-        <p class="flex items-center gap-2">
-          <span><img src="images/User.svg" alt=""></span> FK, Jollz
-        </p>
-      </div>
-
-      <!-- Event Description -->
-      <div>
-        <h3 class="font-semibold mb-2">Event description</h3>
-        <p class="text-sm leading-relaxed text-gray-700">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-
-        </p>
-      </div>
-
-      <!-- Ticket Pricing -->
-      <div>
-        <h3 class="font-semibold mb-2">Tickets Pricing</h3>
-        <div class="flex items-center gap-6">
-          <div>
-            <p class="font-medium">Single</p>
-            <p class="text-purple-700 font-semibold">NGN 5,000</p>
-          </div>
-          <div>
-            <p class="font-medium">Pair</p>
-            <p class="text-purple-700 font-semibold">NGN 9,000</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Buy Button -->
-      <button class="bg-purple-700 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-800">
-        Buy now
-      </button>
+    <div id="main-container" class="md:col-span-2 space-y-6">
     </div>
 
     <!-- Right Column: Map + Contact -->
     <aside class="space-y-6">
       <!-- Contact Organizers -->
       <div>
-        <h3 class="font-semibold mb-2">Contact Organizers</h3>
+        <h3 class="font-semibold mb-2">Contact Seller</h3>
         <div class="flex gap-4 text-purple-700 text-xl">
           <a href="#"><i class="fa-solid fa-envelope"></i><img src="images/🦆 icon _circle email_.svg" alt="email"></a>
           <a href="#"><i class="fa-solid fa-phone"></i><img src="images/Twitter.png" alt="twitter"></a>
@@ -162,6 +110,7 @@
     </div>
   </footer>
 
+  <script type="module" src="./event.js"></script>
 </body>
 
 </html>
